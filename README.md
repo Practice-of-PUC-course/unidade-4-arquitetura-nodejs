@@ -33,3 +33,10 @@ Utilizando os conteúdos apresentados em todas as unidades desta disciplina (esp
  > Faça os tratamentos necessários em seu código para evitar problemas em tempo de execução
 
  > Compartilhe seu projeto no fórum da disciplina
+
+#### Executar localmente
+
+```sh
+# run this command on root dir
+npm run upserver
+```
