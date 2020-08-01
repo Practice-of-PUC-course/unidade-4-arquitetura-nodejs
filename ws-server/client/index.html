@@ -8,6 +8,7 @@
     <title>Calculator with remote WebSocket</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
   </head>
@@ -17,11 +18,15 @@
         <h1>Calc via WebSocker</h1>
 
         <div class="row">
-          <div class="col-md-8">
-            <div id="status">Conectando...</div>
-          </div>
-          <div class="col-md-4">
-            <button type="button" id="close" class="btn active btn-sm btn-warning">Finalizar conexão</button>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-8">
+                <div id="status">Conectando...</div>
+              </div>
+              <div class="col-md-4">
+                <button type="button" id="close" class="btn active btn-sm btn-warning">Finalizar conexão</button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -33,7 +38,16 @@
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-8">
-                  <textarea id="inputvalues" required disabled></textarea>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <textarea id="inputvalues" required disabled></textarea>
+                    </div>
+                    <div class="col-md-3">
+                      <button title="Clear input box" type="button" onclick="calc.clean()" class="btn btn-lg btn-block btn-secondary">
+                        C
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-md-2">
                 </div>
@@ -129,9 +143,8 @@
                       </button>
                     </div>
                     <div class="col-md-3">
-                       
-                      <button type="button" onclick="calc.clean()" class="btn btn-lg btn-block btn-secondary">
-                        C
+                      <button type="button" onclick="calc.addDigit('.')" class="btn btn-lg btn-block btn-secondary">
+                        .
                       </button>
                     </div>
                     <div class="col-md-3">
@@ -143,7 +156,7 @@
                     <div class="col-md-3">
                        
                       <button type="button" onclick="calc.addOperation('*')" class="btn btn-primary btn-lg btn-block">
-                        *
+                        x
                       </button>
                     </div>
                   </div>
