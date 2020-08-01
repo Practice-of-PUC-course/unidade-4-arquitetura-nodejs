@@ -1,5 +1,7 @@
 ## 04 - Arquitetura de Software na Plataforma Node.js
 
+![Print da tela principal](assets/calc.png)
+
 ### Atividade Prática 2 - Unidade 4
 
 #### Aplicações Web em Node.js Conexão HTTP e Websocket
