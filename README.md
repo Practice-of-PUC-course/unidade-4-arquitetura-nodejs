@@ -37,6 +37,6 @@ Utilizando os conteúdos apresentados em todas as unidades desta disciplina (esp
 #### Executar localmente
 
 ```sh
-# run this command on root dir
+# run this command on /ws-server dir
 npm run upserver
 ```
